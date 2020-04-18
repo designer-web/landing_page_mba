@@ -1,0 +1,221 @@
+/*-----------------------
+	campus tour
+-----------------------*/
+.campus-tour {
+	background: #fff;
+	padding-bottom: 0px;
+}
+.campus-tour h2 {
+	color: #2a4356;
+}
+.campus-tour h2 span {
+	color: #2d4256;
+}
+.campus-tour ul.gallery {
+	display: block;
+}
+.campus-tour ul.gallery li {
+	width: 20%;
+	float: left;
+	display: block;
+	background: #000;
+	position: relative;
+}
+.campus-tour ul.gallery li figure {
+	transition: all 0.3s ease 0s;
+}
+.campus-tour ul.gallery li:hover figure {
+	opacity: 0.2;
+}
+.campus-tour ul.gallery li .overlay {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	z-index: 1;
+	text-align: center;
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+}
+.campus-tour ul.gallery li:hover .overlay {
+	top: 44%;
+	opacity: 1;
+}
+.campus-tour ul.gallery li h3 {
+	display: block;
+	padding-bottom: 4px;
+	font-family: 'texgyreadventorbold';
+	font-size: 24px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.campus-tour ul.gallery li p {
+	display: block;
+	padding-bottom: 30px;
+	font-weight: 700;
+	font-size: 12px;
+	color: #fff;
+	text-transform: uppercase;
+	opacity: 0.5;
+}
+.campus-tour ul.gallery li a {
+	width: 56px;
+	height: 56px;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	background: #ff9600;
+	font-size: 22px;
+	color: #fff;
+}
+.campus-tour ul.gallery li a.more {
+	background: #17a43b;
+}
+.campus-tour ul.gallery li a:hover {
+	background: #2c97ea;
+}
+.mfp-arrow-left:before, .mfp-arrow-left:after, .mfp-arrow-right:before, .mfp-arrow-right:after {
+	border: none;
+}
+.mfp-arrow-left:before, .mfp-arrow-right:after {
+	width: 20px;
+	height: 38px;
+	display: block;
+	content: "";
+	background: url(../images/popup-arrows.png) no-repeat center bottom;
+}
+.mfp-arrow-left:before {
+	background-position: left top;
+}
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
+	width: 28px;
+	height: 28px;
+	right: 0px;
+	padding-right: 0px;
+	display: block;
+	cursor: pointer;
+	background: url(../images/popup-close.png) no-repeat center top;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+	cursor: pointer;
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 992px) and (max-width:1199px) {
+	.campus-tour {
+		padding: 60px 0 0 0;
+		padding-bottom: 0px;
+	}
+	.campus-tour ul.gallery li a {
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 16px;
+	}
+	.campus-tour ul.gallery li h3 {
+		font-size: 20px;
+	}
+	.campus-tour ul.gallery li a {
+		margin: 0 2px;
+	}
+	.campus-tour ul.gallery li .overlay {
+		margin-top: -55px;
+	}
+}
+
+/* Portrait tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+	.campus-tour {
+		padding-bottom: 0px;
+	}
+	.campus-tour ul.gallery li h3 {
+		font-size: 14px;
+	}
+	.campus-tour ul.gallery li a {
+		width: 34px;
+		height: 34px;
+		margin: 0 2px;
+		line-height: 34px;
+		font-size: 14px;
+	}
+	.campus-tour ul.gallery li .overlay {
+		margin-top: -58px;
+	}
+	.campus-tour ul.gallery li:hover .overlay {
+		top: 60%;
+	}
+	.campus-tour ul.gallery li p {
+		padding-bottom: 10px;
+	}
+	ul.gallery-filter li {
+		width: auto;
+		font-size: 17px;
+		padding: 0 16px;
+	}
+	ul.gallery-filter li a {
+		padding-bottom: 20px;
+	}
+	.campus-tour .pagination {
+		margin: 50px 0;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	.campus-tour {
+		padding-bottom: 0px;
+	}
+	.campus-tour ul.gallery li {
+		width: 50%;
+	}
+	.campus-tour ul.gallery li h3 {
+		font-size: 18px;
+	}
+	.campus-tour ul.gallery li a {
+		width: 44px;
+		height: 44px;
+		margin: 0 4px;
+		line-height: 44px;
+		font-size: 18px;
+	}
+	.campus-tour ul.gallery li:hover .overlay {
+		top: 60%;
+	}
+	.campus-tour ul.gallery li p {
+		padding-bottom: 10px;
+	}
+	ul.gallery-filter {
+		padding: 0px;
+	}
+	ul.gallery-filter li {
+		width: auto;
+		float: none;
+		display: inline-block;
+		padding: 0 16px;
+		font-size: 16px;
+	}
+	ul.gallery-filter li a {
+		padding-bottom: 20px;
+	}
+	.campus-tour .pagination {
+		margin: 40px 0;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 640px) {
+	
+	ul.gallery-filter li {
+		margin-bottom: 10px;
+		font-size: 15px;
+		padding: 0 6px;
+	}
+	ul.gallery-filter li a {
+		padding-bottom: 8px;
+	}
+}

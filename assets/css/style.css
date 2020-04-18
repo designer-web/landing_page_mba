@@ -1,0 +1,292 @@
+
+/*h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Roboto', sans-serif !important;
+}*/
+
+h1, h2, h3, h4, h5, h6, p, li
+{
+    font-family: 'Nunito Sans', sans-serif !important;
+}
+
+body
+{
+    box-sizing: border-box;
+}
+
+.without-padding
+{
+    padding: 0px !important;
+}
+
+.center-block
+{
+    float: none !important;
+    margin: auto !important;
+}
+
+/* Colors */
+
+.bg-purple
+{
+    background-color: #7A2776;
+}
+
+.white
+{
+    color:#ffffff;
+}
+
+.purple
+{
+    color: #7A2776;
+}
+
+.black
+{
+    color:#000000;
+}
+
+.bg-light-grey
+{
+    background-color: #E6E6E6;
+}
+
+/* Typography */
+
+.heading-bd-lg
+{
+    font-weight: 700;
+   /* font-style: italic;*/
+    font-size:65px;
+}
+
+.heading-bd-md
+{
+    font-weight: 700;
+    /*font-style: italic;*/
+    font-size:32px;
+}
+
+.heading-bd-md2
+{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
+}
+
+.heading-bd-md3
+{
+    font-weight: 700;
+    font-size:30px;
+}
+
+.heading-bd-sm
+{
+    font-weight:700;
+    /*font-style: italic;*/
+    font-size: 18px;
+}
+
+.heading-bd-sm2
+{
+    font-weight:700;
+    /*font-style: italic;*/
+    font-size: 24px;
+}
+
+.course-heading
+{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.ranking-heading
+{
+    font-weight:700;
+    /*font-style:italic;*/
+    font-size:75px;
+}
+
+.para-lg-bd
+{
+    font-size: 18px;
+    font-weight:600;
+    line-height:120%;
+}
+
+.para-md
+{
+    font-size: 17px;
+}
+
+.para-sm
+{
+    font-size: 14px;
+}
+
+
+
+.head-section
+{
+    padding:20px 0px;
+}
+
+.logo-mob
+{
+    display:none;
+}
+
+.banner-text
+{
+    padding-top:60%;
+}
+
+.m-top-neg10
+{
+    margin-top: -10px;
+}
+
+.m-top-neg5
+{
+    margin-top: -5px;
+}
+
+.padding-left-0
+{
+    padding-left: 0px !important;
+}
+
+.margin-left-0
+{
+    margin-left: -40px !important;
+}
+
+.usp-icon img
+{
+    width: 75px;
+    height: 75px;
+}
+
+.course-block
+{
+    width: 18%;
+    margin:10px;
+    padding:15px 25px;
+    border-radius:5px;
+    background-color: #7A2776;
+    height: 225px;
+}
+
+.fee-block
+{
+    padding: 13px 15px 5px 15px;
+    border-radius:3px;
+    background-color: #FFCC00;
+    width:250px;
+}
+
+.student img
+{
+    width: 70% !important;
+}
+
+.video
+{
+    padding: 50px 0px;
+}
+
+#owl-portfolio4 .item
+{
+    padding: 0px 0px 30px 0px !important;
+}
+
+.bg-campus
+{
+    background-image: url('../../assets/images/banners/parallax.jpg');
+    height: 50vh;
+    background-position: top right 20%;
+}
+
+.bg-campus2
+{
+    background-image: url('../../assets/images/banners/parallax.jpg');
+    height: 62vh;
+    background-position: top right 20%;
+}
+
+
+
+@media (max-width: 1200px)
+{
+    .course-block
+    {
+        width: 23%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 992px)
+{
+	.logo-web
+	{
+        display: none;
+    }
+
+    .logo-mob
+    {
+        display: block;
+        text-align:center;
+    }
+
+    .head-text
+    {
+        text-align:center;
+    }
+
+    .pt-20
+    {
+        padding-top: 20px;
+    }
+
+    .t-center
+    {
+        text-align: center;
+    }
+
+    .blocks
+    {
+        margin-left: 25px;
+    }
+
+    .course-block
+    {
+        width: 30%;
+        margin: 10px;
+        height: 200px;
+    }
+
+    .bg-campus
+    {
+        height: 47vh;
+        background-position: top right 65%;
+    }
+
+    .bg-campus2
+    {
+        background-image: url('../../assets/images/banners/parallax.jpg') no-repeat;
+        height: 67vh;
+        background-size: cover;
+        background-position: top right 65%;
+    }
+}
+
+@media (max-width: 787px)
+{
+    .course-block
+    {
+        width: 90%;
+        margin: 10px;
+        height: auto;
+    }
+}
